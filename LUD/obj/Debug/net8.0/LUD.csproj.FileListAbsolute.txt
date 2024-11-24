@@ -1,0 +1,5 @@
+/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/LUD/obj/Debug/net8.0/LUD.csproj.AssemblyReference.cache
+/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/LUD/obj/Debug/net8.0/LUD.GeneratedMSBuildEditorConfig.editorconfig
+/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/LUD/obj/Debug/net8.0/LUD.AssemblyInfoInputs.cache
+/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/LUD/obj/Debug/net8.0/LUD.AssemblyInfo.cs
+/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/LUD/obj/Debug/net8.0/LUD.csproj.CoreCompileInputs.cache
