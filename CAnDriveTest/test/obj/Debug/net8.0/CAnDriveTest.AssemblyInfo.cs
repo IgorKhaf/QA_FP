@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CAnDriveTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed56c4fb682840e7eaa7f7a7f261830d8501022f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9c703db2cb10cc0b7a09d53e1e5347b871b5151")]
 [assembly: System.Reflection.AssemblyProductAttribute("CAnDriveTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CAnDriveTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

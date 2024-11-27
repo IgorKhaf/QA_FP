@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/CAnDriveTest.csproj": {}
+    "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/test/CAnDriveTest.csproj": {}
   },
   "projects": {
-    "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/CAnDriveTest.csproj": {
+    "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/test/CAnDriveTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/CAnDriveTest.csproj",
+        "projectUniqueName": "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/test/CAnDriveTest.csproj",
         "projectName": "CAnDriveTest",
-        "projectPath": "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/CAnDriveTest.csproj",
+        "projectPath": "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/test/CAnDriveTest.csproj",
         "packagesPath": "/Users/igorkhafizov/.nuget/packages/",
-        "outputPath": "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/obj/",
+        "outputPath": "/Users/igorkhafizov/Documents/College/Fall_2024/QA/Final Project/CAnDriveTest/test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/igorkhafizov/.nuget/NuGet/NuGet.Config"
