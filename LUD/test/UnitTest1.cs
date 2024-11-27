@@ -5,14 +5,14 @@ using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.ChromeDriver;
+//using OpenQA.Selenium.ChromeDriver;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumTests
 {
     [TestClass]
-    public class UntitledTestCase
+    public class UnitTest1
     {
         private static IWebDriver driver;
         private StringBuilder verificationErrors;
@@ -22,7 +22,7 @@ namespace SeleniumTests
         [ClassInitialize]
         public static void InitializeClass(TestContext testContext)
         {
-            driver = new ChromeDriver(@"~/downloads/chromedriver_mac64_m1");
+            driver = new ChromeDriver();
             baseURL = "https://www.google.com/";
         }
         
@@ -65,7 +65,7 @@ namespace SeleniumTests
             driver.FindElement(By.Id("txtPassword")).SendKeys("Test12456");
             driver.FindElement(By.Id("javascriptLogin")).Click();
             driver.Navigate().GoToUrl("https://letsusedata.com/CourseSelection.html");
-        }
+        
         }
 
         [TestMethod]
@@ -79,8 +79,10 @@ namespace SeleniumTests
             driver.FindElement(By.Id("txtPassword")).Clear();
             driver.FindElement(By.Id("txtPassword")).SendKeys("test1234");
             driver.FindElement(By.Id("javascriptLogin")).Click();
-            Assert.AreEqual("txtPassword was inocrrec", driver.FindElement(By.class("text-center.login-notice-area")).GetAttribute("value"));
-            // ERROR: Caught exception [unknown command []]
+            IWebElement messageElement = driver.FindElement(By.ClassName("login-notice-area"));
+            Assert.AreEqual("Password was incorrect", element.Text, "Error message does not match!");
+            //Assert.AreEqual("Password was inocrrec", driver.FindElement(By.Id("lblMessage")).text == "Password was incorrect", "Error message does not match!";
+            
         }
         private bool IsElementPresent(By by)
         {
