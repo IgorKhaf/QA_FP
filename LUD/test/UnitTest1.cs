@@ -56,24 +56,30 @@ namespace SeleniumTests
         [TestMethod]
         public void TheUntitledTestCaseTest()
         {
-            driver.Navigate().GoToUrl("https://www.onlineconversion.com/leapyear.htm");
-            driver.FindElement(By.Name("year")).Click();
-            driver.FindElement(By.Name("year")).Clear();
-            driver.FindElement(By.Name("year")).SendKeys("1582");
-            driver.FindElement(By.XPath("//input[@value='Check Year']")).Click();
-            Assert.AreEqual("not a leap year.", driver.FindElement(By.Name("result")).GetAttribute("value"));
-            // ERROR: Caught exception [unknown command []]
+            driver.Navigate().GoToUrl("https://letsusedata.com/index.html");
+            driver.FindElement(By.Id("txtUser")).Click();
+            driver.FindElement(By.Id("txtUser")).Clear();
+            driver.FindElement(By.Id("txtUser")).SendKeys("test1");
+            driver.FindElement(By.Id("txtPassword")).Click();
+            driver.FindElement(By.Id("txtPassword")).Clear();
+            driver.FindElement(By.Id("txtPassword")).SendKeys("Test12456");
+            driver.FindElement(By.Id("javascriptLogin")).Click();
+            driver.Navigate().GoToUrl("https://letsusedata.com/CourseSelection.html");
+        }
         }
 
         [TestMethod]
         public void TheUntitledTestCaseTest1()
         {
-            driver.Navigate().GoToUrl("https://www.onlineconversion.com/leapyear.htm");
-            driver.FindElement(By.Name("year")).Click();
-            driver.FindElement(By.Name("year")).Clear();
-            driver.FindElement(By.Name("year")).SendKeys("1582");
-            driver.FindElement(By.XPath("//input[@value='Check Year']")).Click();
-            Assert.AreEqual("not a leap year.", driver.FindElement(By.Name("result")).GetAttribute("value"));
+            driver.Navigate().GoToUrl("https://letsusedata.com/index.html");
+            driver.FindElement(By.Id("txtUser")).Click();
+            driver.FindElement(By.Id("txtUser")).Clear();
+            driver.FindElement(By.Id("txtUser")).SendKeys("test1");
+            driver.FindElement(By.Id("txtPassword")).Click();
+            driver.FindElement(By.Id("txtPassword")).Clear();
+            driver.FindElement(By.Id("txtPassword")).SendKeys("test1234");
+            driver.FindElement(By.Id("javascriptLogin")).Click();
+            Assert.AreEqual("txtPassword was inocrrec", driver.FindElement(By.class("text-center.login-notice-area")).GetAttribute("value"));
             // ERROR: Caught exception [unknown command []]
         }
         private bool IsElementPresent(By by)
