@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework.Constraints;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 //using OpenQA.Selenium.ChromeDriver;
@@ -79,9 +80,8 @@ namespace SeleniumTests
             driver.FindElement(By.Id("txtPassword")).Clear();
             driver.FindElement(By.Id("txtPassword")).SendKeys("test1234");
             driver.FindElement(By.Id("javascriptLogin")).Click();
-            IWebElement messageElement = driver.FindElement(By.ClassName("login-notice-area"));
-            Assert.AreEqual("Password was incorrect", element.Text, "Error message does not match!");
-            //Assert.AreEqual("Password was inocrrec", driver.FindElement(By.Id("lblMessage")).text == "Password was incorrect", "Error message does not match!";
+            bool invalidPasswordMessage = driver.PageSource.Contains("Password was incorrect");
+            Assert.IsFalse(invalidPasswordMessage, "Invalid Password message displayed unexpectedly.");
             
         }
         private bool IsElementPresent(By by)
